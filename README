@@ -21,3 +21,25 @@ Buildroot comes with a basic configuration for a number of boards. Run
 Please feed suggestions, bug reports, insults, and bribes back to the
 buildroot mailing list: buildroot@buildroot.org
 You can also find us on #buildroot on Freenode IRC.
+源文件：
+buildroot-2015.11.tar.bz2  sources-buildroot-files-2015.11-16.08.0.zip
+
+操作记录：
+tar -xvf buildroot-2015.11.tar.bz2
+unzip sources-buildroot-files-2015.11-16.08.0.zip  -d b
+unzip b/git-buildroot-2015.11-16.08.0.zip  -d b
+cd buildroot-2015.11/
+
+git init 
+git add .
+git commit  -m "orgin buildroot wjx"
+git am ../b/git-buildroot-2015.11-16.08.0/*.patch
+# rm -rf ../sources-buildroot-files-2015.11-16.08.0.zip  ../buildroot-2015.11.tar.bz2  ../b
+git remote add origin https://github.com/wjxrc/buildroot_6810.git
+git push -u origin master
+
+
+1.5.	后续使用github
+#多试几次 和网速有关系；
+git clone  https://github.com/wjxrc/buildroot_6810.git
+
