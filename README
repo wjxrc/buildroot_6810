@@ -43,3 +43,6 @@ git push -u origin master
 #多试几次 和网速有关系；
 git clone  https://github.com/wjxrc/buildroot_6810.git
 
+
+
+6810 7040 cpu
