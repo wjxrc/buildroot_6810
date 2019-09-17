@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2015.11-g8a766e6 Configuration
+# Buildroot 2015.11-geb73e1e Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -282,7 +282,7 @@ BR2_ROOTFS_POST_IMAGE_SCRIPT=""
 # Target packages
 #
 BR2_PACKAGE_BUSYBOX=y
-BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox.config"
+BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox_xgp8.config"
 BR2_PACKAGE_BUSYBOX_CONFIG_FRAGMENT_FILES=""
 BR2_PACKAGE_BUSYBOX_SHOW_OTHERS=y
 # BR2_PACKAGE_BUSYBOX_SELINUX is not set
