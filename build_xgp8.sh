@@ -1,5 +1,6 @@
 #/bin/bash
-make clean
+#make clean
+rm -rf  output
 make xgp8_be_defconfig
 make
 cp .config configs/xgp8_be_defconfig
