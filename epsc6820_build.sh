@@ -1,11 +1,13 @@
 #/bin/bash
 #rm -rf output
 #make 6820gpsc_tool_alone_defconfig
+
 dc="6820epsc_defconfig"
 bc="package/busybox/busybox_epsc.config"
 function help()
 {
 		set +x
+		echo "compile ip shuld be 172.16.136.205"
 		echo "you input is $*"
 		echo "you input is $@"
 		echo "usage is:"
@@ -41,6 +43,6 @@ cd output ||  exit
 
 rm -rf rootfs*
 cp target rootfs -r
-mkdir -p home/root
+mkdir -p rootfs/home/root
 tar -jcf rootfs.tar.bz2 rootfs
 cp rootfs.tar.bz2 ../
