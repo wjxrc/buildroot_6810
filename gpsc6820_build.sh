@@ -42,5 +42,8 @@ rm -rf rootfs*
 cp target rootfs -r
 rm -rf rootfs/etc/init.d/S50sshd  rootfs/etc/init.d/S50telnet
 mkdir -p rootfs/home/root
+cd rootfs/usr/sbin
+mv sshd  sshd_bak
+cd -
 tar -jcf rootfs.tar.bz2 rootfs
 cp rootfs.tar.bz2 ../
