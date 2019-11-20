@@ -35,7 +35,9 @@ elif [ $1 = "a" -o $1 = 4 ]; then
 fi
 
 cp .config configs/${dc}
+cp .config output/target/etc/buildroot_config
 cp output/build/busybox-1.24.1/.config  $bc
+cp output/build/busybox-1.24.1/.config  output/target/etc/busybox_config
 
 cd output 
 rm -rf rootfs*
