@@ -44,5 +44,9 @@ cd output ||  exit
 rm -rf rootfs*
 cp target rootfs -r
 mkdir -p rootfs/home/root
+rm -rf rootfs/etc/init.d/S50dropbear
+rm -rf rootfs/etc/init.d/S50sshd
+mv  rootfs/usr/bin/dropbearkey rootfs/usr/sbin/dropbearkey
+rm -rf rootfs/etc/dropbear
 tar -jcf rootfs.tar.bz2 rootfs
 cp rootfs.tar.bz2 ../
