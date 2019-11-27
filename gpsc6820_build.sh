@@ -43,6 +43,7 @@ cd output
 rm -rf rootfs*
 cp target rootfs -r
 rm -rf rootfs/etc/init.d/S50sshd  rootfs/etc/init.d/S50telnet rootfs/etc/init.d/S50dropbear
+mv rootfs/usr/bin/dropbearkey rootfs/usr/sbin/dropbearkey
 mkdir -p rootfs/home/root
 cd rootfs/usr/sbin
 mv sshd  sshd_bak
