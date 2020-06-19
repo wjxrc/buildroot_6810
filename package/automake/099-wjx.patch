@@ -1,0 +1,11 @@
+--- automake-1.15_b/bin/automake.in	2020-06-19 10:43:08.201894280 +0800
++++ automake-1.15/bin/automake.in	2020-06-19 10:44:03.562217503 +0800
+@@ -3878,7 +3878,7 @@
+ sub substitute_ac_subst_variables
+ {
+   my ($text) = @_;
+-  $text =~ s/\${([^ \t=:+{}]+)}/substitute_ac_subst_variables_worker ($1)/ge;
++  $text =~ s/\$\{([^ \t=:+{}]+)\}/substitute_ac_subst_variables_worker ($1)/ge;
+   return $text;
+ }
+ 
