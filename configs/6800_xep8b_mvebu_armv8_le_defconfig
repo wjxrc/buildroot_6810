@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2015.11-g3819c38-dirty Configuration
+# Buildroot 2015.11-g5b2729c-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 
@@ -351,7 +351,7 @@ BR2_PACKAGE_MPLAYER_ARCH_SUPPORTS=y
 # Compressors and decompressors
 #
 # BR2_PACKAGE_BZIP2 is not set
-# BR2_PACKAGE_GZIP is not set
+BR2_PACKAGE_GZIP=y
 # BR2_PACKAGE_INFOZIP is not set
 # BR2_PACKAGE_LZ4 is not set
 # BR2_PACKAGE_LZIP is not set
@@ -1642,7 +1642,7 @@ BR2_PACKAGE_INITSCRIPTS=y
 # BR2_PACKAGE_KMOD is not set
 # BR2_PACKAGE_KVMTOOL is not set
 # BR2_PACKAGE_LXC is not set
-# BR2_PACKAGE_MONIT is not set
+BR2_PACKAGE_MONIT=y
 # BR2_PACKAGE_NCDU is not set
 # BR2_PACKAGE_NUT is not set
 # BR2_PACKAGE_POLKIT is not set
