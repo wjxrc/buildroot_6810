@@ -395,7 +395,6 @@ export BASE_DIR
 # what you are doing.
 #
 ################################################################################
-
 all: world
 
 # Include legacy before the other things, because package .mk files
@@ -822,7 +821,7 @@ endif
 # printvars prints all the variables currently defined in our Makefiles
 printvars:
 	@$(foreach V, \
-		$(sort $(.VARIABLES)), \
+		$(sort  $(filter $(VARS),$(.VARIABLES))), \
 		$(if $(filter-out environment% default automatic, \
 				$(origin $V)), \
 		$(info $V=$($V) ($(value $V)))))

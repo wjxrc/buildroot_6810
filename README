@@ -45,5 +45,9 @@ git clone  https://github.com/wjxrc/buildroot_6810.git
 
 
 
-6810 7040 cpu
-xxxtest
+6810,xep8, 7040 cpu
+xep8b,ls1043,
+xgp8,a385
+6820_epsc,bcm56151
+6820_gpsc,t1024
+
